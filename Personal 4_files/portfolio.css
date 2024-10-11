@@ -1,0 +1,138 @@
+.page{
+    display:flex;
+    flex-direction: column;
+    position: sticky;
+    margin:0px;
+}
+.page img{
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+}
+.content{
+   display:flex;
+   position:absolute;
+   color:white;
+   margin:14px;
+   width:97vw;
+   height:40px;
+   justify-content: space-between;
+   padding-bottom:15px;
+   border-bottom:1px inset white;
+}
+.content .social {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left:25px;
+    align-items:center;
+    margin-right:5%;
+    height:30px;
+    overflow:hidden;
+    margin-top:5px;
+    border: 2px inset rgb(77, 75, 75);
+    border-radius:8px;
+}
+.social:hover{
+    background-color: rgb(23, 23, 23);
+}
+.content .social a:hover{
+    transform:translateY(-3px);
+}
+.content .social #insta{
+    color:rgb(255, 26, 198);
+}
+.content .social #linkedin{
+    color: rgb(87, 87, 248);
+    background-color:white; 
+}
+.content .social #github{
+    color: rgb(255, 255, 255);
+}
+.content a{
+    text-decoration: none;
+    color: white;
+    margin:8px;
+}
+.page .header {
+    display:flex;
+    position: absolute;
+    width:96vw;
+    height:30px;
+    margin-top:120px;
+    padding: 30px;
+    padding-bottom:4px;
+    font-size:1.3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.header{
+     align-items:center;
+}
+h4{
+    position: absolute;
+    color:rgb(214, 214, 214);
+    margin-top:190px;
+    margin-left:30px;
+}
+.header{
+    color: rgb(182, 181, 181);
+}
+.header .colortext{
+    color: rgb(255, 255, 63);
+}
+.middle{
+    display:flex;
+    height:45vh;
+    width:100vw;
+    position: absolute;
+    margin-top:170px;
+    align-items:center;
+    justify-content: space-between;
+}
+.middle .body{
+    display:flex;
+    flex-direction:row;
+    position:relative;
+    color:rgb(182, 181, 181);
+    margin-left:30px;
+    font-size:1.1em;
+    max-height: 30vh;
+    max-width: 55vw;
+}
+.middle .body p{
+    text-shadow:1px 1px 1px rgb(255, 255, 255), -1px -2px 1px black;
+}
+.middle .body .list{
+    color: gold;
+    font-size: 15px;
+
+}
+.middle .image img{
+    
+    position:relative;
+    height:80%;
+    width:40%;
+    margin-left:230px;
+    scale:1.5;
+}
+.footer{
+    background-color:black;
+    display:flex;
+    justify-content: center;
+    color: white;
+    font-size:2em;
+    border-top: 2px double white;
+    width:96vw;
+    font-family: 'Trebuchet MS';
+}
+@media screen and (max-width:480px){
+    .middle .body{
+              overflow:scroll;
+    }
+}
+@media screen and (max-width:850px){
+    .middle .image img{
+        transform:translateX(-105px);
+        scale:1.8;
+    }
+}
